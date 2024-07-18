@@ -4,6 +4,7 @@ import { UpdateProductDto } from './dto/update-product.dto';
 import { product } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
 
+
 @Injectable()
 export class ProductsService extends BaseService<product, CreateProductDto ,  UpdateProductDto>{
   constructor(prisma: PrismaService) {
